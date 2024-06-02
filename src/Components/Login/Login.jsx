@@ -24,7 +24,7 @@ const Login = ({setShowLogin}) => {
 
     const onLogin = async(event) => {
         event.preventDefault()
-        let newUrl = https://yumrun-1.onrender.com;
+        let newUrl = `https://yumrun-1.onrender.com`;
         if(currState === "Login") {
             newUrl += `/api/user/login`
         }
