@@ -32,7 +32,7 @@ const Login = ({setShowLogin}) => {
         //     newUrl += `/api/user/register`
         // }
 
-        const response = await axios.post(`https://yumrun-1.onrender.com`,data);
+        const response = await axios.post(`https://yumrun-1.onrender.com/api/user/login`,data);
 
         if (response.data.success){
             setToken(response.data.token);
