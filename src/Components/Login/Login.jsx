@@ -38,6 +38,7 @@ const Login = ({setShowLogin}) => {
             setToken(response.data.token);
             localStorage.setItem("token",response.data.token);
             setShowLogin(false)
+            alert(response.data.message)
         }
         else{
             alert(response.data.message)
