@@ -24,15 +24,15 @@ const Login = ({setShowLogin}) => {
 
     const onLogin = async(event) => {
         event.preventDefault()
-        let newUrl = `https://yumrun-1.onrender.com`;
-        if(currState === "Login") {
-            newUrl += `/api/user/login`
-        }
-        else {
-            newUrl += `/api/user/register`
-        }
+        // let newUrl = `https://yumrun-1.onrender.com`;
+        // if(currState === "Login") {
+        //     newUrl += `/api/user/login`
+        // }
+        // else {
+        //     newUrl += `/api/user/register`
+        // }
 
-        const response = await axios.post(newUrl,data);
+        const response = await axios.post(`https://yumrun-1.onrender.com`,data);
 
         if (response.data.success){
             setToken(response.data.token);
