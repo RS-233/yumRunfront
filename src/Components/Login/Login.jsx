@@ -32,7 +32,7 @@ const Login = ({setShowLogin}) => {
              newUrl += `/api/user/register`
          }
 
-        const response = await axios.post(newurl,data);
+        const response = await axios.post(newUrl,data);
 
         if (response.data.success){
             setToken(response.data.token);
